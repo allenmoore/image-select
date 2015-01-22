@@ -9,7 +9,7 @@
 
 namespace Marslender\ImageSelect;
 
-include __DIR__ . '/admin-helpers.php';
+include __DIR__ . '/image-helpers.php';
 
 function admin_scripts() {
 	wp_enqueue_media();
