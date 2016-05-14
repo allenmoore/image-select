@@ -1,0 +1,14 @@
+{
+    "name": "cmmarslender/image-select",
+    "description": "Helpers for image selector",
+    "type": "wordpress-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Marslender",
+            "email": "chrismarslender@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
