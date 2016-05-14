@@ -15,8 +15,7 @@ function render_image_select( $args ) {
 	$image_src = is_array( $image_src ) ? reset( $image_src ): '';
 
 	if ( empty( $image_src ) ) {
-		// @TODO THEME SPECIFIC - Specify URL to fallback here
-		$image_src = 'http://placehold.it/150&text=No+Image';
+		$image_src = apply_filters( 'cmm-image-select-fallback-url', 'http://placehold.it/150?text=No+Image' );
 	}
 
 	?>
