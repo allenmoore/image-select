@@ -1,6 +1,6 @@
 <?php
 
-namespace Marslender\ImageSelect;
+namespace Cmmarslender\ImageSelect;
 
 function render_image_select( $args ) {
 	$defaults = array(
