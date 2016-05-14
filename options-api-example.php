@@ -17,7 +17,7 @@ function get_settings_section() {
 }
 
 function add_admin_page() {
-	add_menu_page( 'Example Media Upload', 'Example Media Upload', 'edit_others_posts', get_settings_page_slug(), 'Marslender\ImageSelect\render_example_media', 'dashicons-admin-media' );
+	add_menu_page( 'Example Media Upload', 'Example Media Upload', 'edit_others_posts', get_settings_page_slug(), 'Cmmarslender\ImageSelect\render_example_media', 'dashicons-admin-media' );
 }
 
 function register_settings() {
