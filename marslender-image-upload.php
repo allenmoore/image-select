@@ -18,4 +18,8 @@ function admin_scripts() {
 add_action( 'admin_enqueue_scripts', 'Cmmarslender\ImageSelect\admin_scripts' );
 
 // Include the example using the options api. Not required for customized implementations, but demonstrates how to use.
-include __DIR__ . '/options-api-example.php';
+// To load, add the following:
+// add_filter( 'cmmarslender-image-select-load-example', '__return_true' );
+if ( apply_filters( 'cmmarslender-image-select-load-example', false ) ) {
+	include __DIR__ . '/options-api-example.php';
+}
