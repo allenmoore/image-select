@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "cmmarslender/wp-library-helpers": "dev-master"
+    },
     "autoload": {
         "files": [ "marslender-image-upload.php" ]
     }
