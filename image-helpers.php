@@ -7,11 +7,12 @@ function render_image_select( $args ) {
 		'label' => 'Upload an Image', // Label for the upload
 		'name' => 'cmm-image-upload', // the HTML input name attribute
 		'image_id' => 0, // The ID of the image currently selected for this uploader
+		'image_size' => 'thumbnail',
 	);
 
 	$args = wp_parse_args( $args, $defaults );
 
-	$image_src = wp_get_attachment_image_src( $args['image_id'], 'thumbnail' );
+	$image_src = wp_get_attachment_image_src( $args['image_id'], $args['image_size'] );
 	$image_src = is_array( $image_src ) ? reset( $image_src ): '';
 
 	if ( empty( $image_src ) ) {
