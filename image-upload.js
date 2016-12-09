@@ -16,6 +16,7 @@
 			$parent = $this.parents('.image-select-parent').first(),
 			$image = $parent.find('img'),
 			$field = $parent.find('.image-id-input'),
+			customSize = $parent.data('image-size'),
 			frame;
 
 		e.preventDefault();
@@ -45,7 +46,9 @@
 				imageUrl = attachment.get('url');
 
 			// Use thumbnail size if available for preview
-			if ( "undefined" !== typeof sizes.thumbnail ) {
+			if ( "undefined" !== typeof sizes[ customSize ] ) {
+				imageUrl = sizes[ customSize ].url;
+			} else if ( "undefined" !== typeof sizes.thumbnail ) {
 				imageUrl = sizes.thumbnail.url;
 			}
 
