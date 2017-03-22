@@ -1,0 +1,67 @@
+{
+  "name": "cmmarslender-image-select",
+  "title": "Marslender Image Upload",
+  "description": "Helpers for image selector.",
+  "version": "2.0.0",
+  "homepage": "http://chrismarslender.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmmarslender/image-select"
+  },
+  "author": {
+    "name": "Chris Marslender",
+    "email": "chrismarslender@gmail.com",
+    "url": "http://chrismarslender.com"
+  },
+  "contributors": [
+    {
+      "name": "Chris Marslender",
+      "email": "chrismarslender@gmail.com",
+      "url": "http://chrismarslender.com"
+    },
+    {
+      "name": "Allen Moore",
+      "email": "am@allenmoore.me",
+      "url": "https://allenmoore.me/"
+    }
+  ],
+  "devDependencies": {
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-register": "^6.24.0",
+    "babelify": "^7.3.0",
+    "blue-tape": "^1.0.0",
+    "browserify": "^14.1.0",
+    "cssnano": "^3.10.0",
+    "eslint": "^3.18.0",
+    "eslint-config-allenmoore": "^2.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-buffer": "0.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11",
+    "postcss-color-rgba-fallback": "^2.2.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-reporter": "^3.0.0",
+    "postcss-rgb-plz": "^2.0.2",
+    "pump": "^1.0.2",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "scsslint-config-allenmoore": "^1.0.0",
+    "tape": "^4.6.3",
+    "utils-merge": "^1.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  }
+}
