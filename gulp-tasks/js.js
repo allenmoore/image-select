@@ -7,11 +7,12 @@ import livereload from 'gulp-livereload';
 import rename from 'gulp-rename';
 import source from 'vinyl-source-stream';
 import sourcemaps from 'gulp-sourcemaps';
+import vueify from 'vueify';
 
 const config = {
-	src: 'assets/js/src/cmm-image-select.js',
-	dist: 'cmm-image-select.js',
-	distDir: 'assets/js/dist'
+	src: 'assets/js/src/components/new-image/new-image.js',
+	dist: 'cmmis.js',
+	dest: 'assets/js/dist'
 };
 
 gulp.task( 'js', function() {
@@ -19,7 +20,7 @@ gulp.task( 'js', function() {
 		debug: true
 	} ).transform( babelify, {
 		presets: ['es2015']
-	} );
+	} ).transform( vueify );
 
 	return b.bundle()
 		.pipe( source( config.src ) )
@@ -30,6 +31,6 @@ gulp.task( 'js', function() {
 		.on( 'error', gUtil.log )
 		.pipe( rename( config.dist ) )
 		.pipe( sourcemaps.write( './' ) )
-		.pipe( gulp.dest( config.distDir ) )
+		.pipe( gulp.dest( config.dest ) )
 		.pipe( livereload() );
 } );

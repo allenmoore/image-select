@@ -1,0 +1,27 @@
+.cmmis-button {
+	width: 24px;
+	height: 24px;
+	padding: 3px;
+	border-width: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.cmmis-button.-delete {
+	margin-left: 5px;
+	background-color: $color-red;
+}
+
+.cmmis-button.-delete:hover,
+.cmmis-button.-delete:focus {
+	background-color: $color-red-dark;
+}
+
+.cmmis-button.-edit {
+	background-color: $color-blue;
+}
+
+.cmmis-button.-edit:hover,
+.cmmis-button.-edit:focus {
+	background-color: $color-blue-dark;
+}

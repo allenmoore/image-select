@@ -8,9 +8,8 @@ import reporter from 'postcss-reporter';
 import sourcemaps from 'gulp-sourcemaps';
 
 const config = {
-	src: './assets/css/scss/styles.scss',
-	srcDir: './assets/css/src',
-	distDir: './assets/css/dist'
+	src: './assets/css/dist/cmmis-admin-styles.css',
+	dest: './assets/css/dist'
 };
 
 gulp.task( 'cssnano', function( cb ) {
@@ -29,7 +28,7 @@ gulp.task( 'cssnano', function( cb ) {
 	];
 
 	pump( [
-		gulp.src( './assets/dist/styles.css' ),
+		gulp.src( config.src ),
 		postcss( processors ),
 		rename( function( path ) {
 			path.extname = '.min.css'
@@ -38,7 +37,7 @@ gulp.task( 'cssnano', function( cb ) {
 			loadMaps: true
 		} ),
 		sourcemaps.write( './' ),
-		gulp.dest( config.distDir ),
+		gulp.dest( config.dest ),
 		livereload()
 	], cb );
 } );

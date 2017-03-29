@@ -10,7 +10,7 @@ const config = {
 		'assets/js/vendor/**/*.js',
 		'assets/js/src/**/*.js'
 	],
-	dist: 'cmm-image-select.js',
+	dist: 'cmmis.js',
 	distDir: 'assets/js/dist'
 };
 

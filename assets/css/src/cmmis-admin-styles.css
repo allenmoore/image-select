@@ -1,0 +1,94 @@
+.cmmis-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.cmmis-image {
+  position: relative;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.cmmis-image:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: 10;
+}
+
+.cmmis-image > .image {
+  display: block;
+}
+
+.cmmis-button {
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border-width: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cmmis-button.-delete {
+  margin-left: 5px;
+  background-color: #dc3232;
+}
+
+.cmmis-button.-delete:hover,
+.cmmis-button.-delete:focus {
+  background-color: #bf2121;
+}
+
+.cmmis-button.-edit {
+  background-color: #00a0d2;
+}
+
+.cmmis-button.-edit:hover,
+.cmmis-button.-edit:focus {
+  background-color: #0073aa;
+}
+
+.image-actions {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 11;
+}
+
+.image-caption {
+  padding: 5px;
+  background-color: #f5f5f5;
+  border: 1px solid #eeeeee;
+  font-size: 12px;
+  font-weight: 600;
+  color: #444444;
+  text-align: center;
+}
+
+.svg-delete {
+  width: 11px;
+  height: 14px;
+}
+
+.svg-delete > .path {
+  fill: #fff;
+}
+
+.svg-edit {
+  width: 14px;
+  height: 14px;
+}
+
+.svg-edit > .path {
+  fill: #fff;
+}
+
+/*# sourceMappingURL=cmmis-admin-styles.css.map */

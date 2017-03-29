@@ -1,0 +1,13 @@
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-blue: #00a0d2 !default;
+$color-blue-dark: #0073aa !default;
+$color-red: #dc3232 !default;
+$color-red-dark: darken($color-red, 9%) !default;
+$color-yellow: #ffb900 !default;
+$color-green: #46b450 !default;
+$color-gray: #444444 !default;
+$color-gray-light: #eeeeee !default;
+$color-gray-lighter: #f5f5f5 !default;
+
+$color-black-25: rgba($color-black, 25%) !default;

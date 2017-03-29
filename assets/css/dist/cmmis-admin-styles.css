@@ -1,0 +1,104 @@
+.cmmis-images {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+}
+
+.cmmis-image {
+  position: relative;
+  -ms-flex-order: 0;
+      order: 0;
+  -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
+.cmmis-image:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: 10;
+}
+
+.cmmis-image > .image {
+  display: block;
+}
+
+.cmmis-button {
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border-width: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cmmis-button.-delete {
+  margin-left: 5px;
+  background-color: rgb(220, 50, 50);
+}
+
+.cmmis-button.-delete:hover,
+.cmmis-button.-delete:focus {
+  background-color: rgb(191, 33, 33);
+}
+
+.cmmis-button.-edit {
+  background-color: rgb(0, 160, 210);
+}
+
+.cmmis-button.-edit:hover,
+.cmmis-button.-edit:focus {
+  background-color: rgb(0, 115, 170);
+}
+
+.image-actions {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 11;
+}
+
+.image-caption {
+  padding: 5px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(238, 238, 238);
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(68, 68, 68);
+  text-align: center;
+}
+
+.svg-delete {
+  width: 11px;
+  height: 14px;
+}
+
+.svg-delete > .path {
+  fill: rgb(255, 255, 255);
+}
+
+.svg-edit {
+  width: 14px;
+  height: 14px;
+}
+
+.svg-edit > .path {
+  fill: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=cmmis-admin-styles.css.map */

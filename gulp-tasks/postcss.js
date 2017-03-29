@@ -9,9 +9,8 @@ import rgbPlz from 'postcss-rgb-plz';
 import sourcemaps from 'gulp-sourcemaps';
 
 const config = {
-	src: './assets/css/scss/styles.scss',
-	srcDir: './assets/css/src',
-	distDir: './assets/css/dist'
+	src: './assets/css/src/cmmis-admin-styles.css',
+	dest: './assets/css/dist'
 };
 
 gulp.task( 'postcss', function( cb ) {
@@ -34,13 +33,13 @@ gulp.task( 'postcss', function( cb ) {
 	];
 
 	pump( [
-		gulp.src( './assets/css/src/styles.css' ),
+		gulp.src( config.src ),
 		postcss( processors ),
 		sourcemaps.init( {
 			loadMaps: true
 		} ),
 		sourcemaps.write( './' ),
-		gulp.dest( config.distDir ),
+		gulp.dest( config.dest ),
 		livereload()
 	], cb );
 } );

@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "78b9c974d324885ad018d54d796ddffd",
     "content-hash": "b620e0b45ebc684e8f54fd284c68db17",
     "packages": [
         {
@@ -13,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cmmarslender/wp-library-helpers.git",
-                "reference": "fc55bd40f9f17c07b81cc3ba5dd18469b85c0b58"
+                "reference": "8824b7dab9657cdee0b35843659c68d3f671dda9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cmmarslender/wp-library-helpers/zipball/fc55bd40f9f17c07b81cc3ba5dd18469b85c0b58",
-                "reference": "fc55bd40f9f17c07b81cc3ba5dd18469b85c0b58",
+                "url": "https://api.github.com/repos/cmmarslender/wp-library-helpers/zipball/8824b7dab9657cdee0b35843659c68d3f671dda9",
+                "reference": "8824b7dab9657cdee0b35843659c68d3f671dda9",
                 "shasum": ""
             },
             "type": "wordpress-library",
@@ -38,7 +37,7 @@
                 }
             ],
             "description": "Helper functions for use in WordPress libraries",
-            "time": "2016-05-14 02:54:13"
+            "time": "2016-05-14 03:02:17"
         }
     ],
     "packages-dev": [],
