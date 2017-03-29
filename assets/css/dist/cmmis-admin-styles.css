@@ -1,3 +1,13 @@
+.cmmis-footer {
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-top: 6px;
+  margin-right: -12px;
+  margin-left: -12px;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
 .cmmis-images {
   display: -ms-flexbox;
   display: flex;
@@ -98,6 +108,15 @@
 }
 
 .svg-edit > .path {
+  fill: rgb(255, 255, 255);
+}
+
+.svg-plus {
+  width: 14px;
+  height: 14px;
+}
+
+.svg-plus > .path {
   fill: rgb(255, 255, 255);
 }
 

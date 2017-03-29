@@ -169,6 +169,12 @@ function cmmisRenderImages( $args ) {
 			<div class="image-caption"><?php esc_html_e( 'title-goes-here', 'cmmis' ); ?></div>
 		</div>
 	</div>
+	<div class="cmmis-footer">
+		<button class="button button-primary button-large" aria-pressed="false">
+			<svg class="svg-plus" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><title>Plus</title><path class="path" d="M13 5v3H8v5H5V8H0V5h5V0h3v5z"/></svg>
+			<?php esc_html_e( 'Add Image', 'cmmis' ); ?>
+		</button>
+	</div>
 	<?php
 }
 
