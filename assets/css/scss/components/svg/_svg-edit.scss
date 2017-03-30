@@ -1,6 +1,10 @@
 .svg-edit {
 	width: 14px;
 	height: 14px;
+	
+	.cmmis-button & {
+		pointer-events: none;
+	}
 }
 
 .svg-edit > .path {

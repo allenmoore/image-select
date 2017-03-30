@@ -1,6 +1,11 @@
 .svg-plus {
-	width: 14px;
-	height: 14px;
+	width: 12px;
+	height: 12px;
+	
+	.button-primary & {
+		padding-right: 5px;
+		padding-bottom: 3px;
+	}
 }
 
 .svg-plus > .path {

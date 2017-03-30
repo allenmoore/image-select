@@ -53,129 +53,10 @@ function cmmisRenderImages( $args ) {
 
 	wp_enqueue_style( 'cmmis-admin-styles' );
 	?>
-	<div class="cmmis-images">
-		<div class="cmmis-image">
-			<img class="image" src="https://placeimg.com/131/131/tech" />
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-caption"><?php esc_html_e( 'title-goes-here', 'cmmis' ); ?></div>
-		</div>
-		<div class="cmmis-image">
-			<img class="image" src="https://placeimg.com/131/131/tech" />
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-caption"><?php esc_html_e( 'title-goes-here', 'cmmis' ); ?></div>
-		</div>
-		<div class="cmmis-image">
-			<img class="image" src="https://placeimg.com/131/131/tech" />
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-caption"><?php esc_html_e( 'title-goes-here', 'cmmis' ); ?></div>
-		</div>
-		<div class="cmmis-image">
-			<img class="image" src="https://placeimg.com/131/131/tech" />
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-caption"><?php esc_html_e( 'title-goes-here', 'cmmis' ); ?></div>
-		</div>
-		<div class="cmmis-image">
-			<img class="image" src="https://placeimg.com/131/131/tech" />
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-caption"><?php esc_html_e( 'title-goes-here', 'cmmis' ); ?></div>
-		</div>
-		<div class="cmmis-image">
-			<img class="image" src="https://placeimg.com/131/131/tech" />
-			<div class="image-actions">
-				<button class="cmmis-button -edit" aria-pressed="false">
-					<svg class="svg-edit" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Edit</title><path class="path" d="M10.89.39l2.71 2.72c.46.46.42 1.24.03 1.64l-8.01 8.02-5.56 1.16 1.16-5.58S8.82.72 9.21.32c.39-.39 1.22-.39 1.68.07zM8.16 3.18L2.57 8.79 3.68 9.9l5.54-5.65-1.06-1.07zm-2.97 8.23l5.58-5.6L9.7 4.73l-5.59 5.6 1.08 1.08z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Edit Image', 'cmmis' ); ?></span>
-				</button>
-				<button class="cmmis-button -delete" aria-pressed="false">
-					<svg class="svg-delete" viewBox="0 0 13 16" xmlns="http://www.w3.org/2000/svg"><title>Delete</title><path class="path" d="M9 2h3c.55 0 1 .45 1 1v1H0V3c0-.55.45-1 1-1h3C4.23.86 5.29 0 6.5 0S8.77.86 9 2zM5 2h3c-.21-.58-.85-1-1.5-1S5.21 1.42 5 2zM1 5h11v10c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V5zm3 9V7H3v7h1zm3 0V7H6v7h1zm3 0V7H9v7h1z"/></svg>
-					<span class="screen-reader-text"><?php esc_html_e( 'Delete Image', 'cmmis' ); ?></span>
-				</button>
-			</div>
-			<div class="image-caption"><?php esc_html_e( 'title-goes-here', 'cmmis' ); ?></div>
-		</div>
-	</div>
-	<div class="cmmis-footer">
-		<button class="button button-primary button-large" aria-pressed="false">
-			<svg class="svg-plus" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><title>Plus</title><path class="path" d="M13 5v3H8v5H5V8H0V5h5V0h3v5z"/></svg>
-			<?php esc_html_e( 'Add Image', 'cmmis' ); ?>
-		</button>
-	</div>
+	<div id="app"></div>
 	<?php
+	wp_enqueue_script( 'media-upload' );
+	wp_enqueue_script( 'cmmis-admin-scripts' );
 }
 
 /**
@@ -190,6 +71,16 @@ function cmmisAdminScripts() {
 		CMMIS_URL . "assets/css/dist/cmmis-admin-styles{$postfix}.css",
 		array(),
 		CMMIS_VERSION
+	);
+
+	wp_register_script(
+		'cmmis-admin-scripts',
+		CMMIS_URL . "assets/js/dist/cmmis.js",
+		array(
+			'jquery'
+		),
+		CMMIS_VERSION,
+		true
 	);
 }
 add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\cmmisAdminScripts' );

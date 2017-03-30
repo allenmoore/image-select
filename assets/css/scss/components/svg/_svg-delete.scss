@@ -1,6 +1,11 @@
 .svg-delete {
 	width: 11px;
 	height: 14px;
+	
+	.cmmis-button & {
+		pointer-events: none;
+		vertical-align: top;
+	}
 }
 
 .svg-delete > .path {
