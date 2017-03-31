@@ -2,6 +2,9 @@
 	padding: 5px;
 	background-color: $color-gray-lighter;
 	border: 1px solid $color-gray-light;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	font-size: 12px;
 	font-weight: 600;
 	color: $color-gray;

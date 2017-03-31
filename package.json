@@ -26,9 +26,9 @@
     }
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "svg": "vsvg -s ./assets/svg/src -t ./src/components/icons"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot && gulp",
+    "build": "vsvg -s ./assets/svg/dist -t ./src/components/icons && cross-env NODE_ENV=production webpack --progress --hide-modules && gulp",
+    "svg": "vsvg -s ./assets/svg/dist -t ./src/components/icons"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

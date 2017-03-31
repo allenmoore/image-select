@@ -12,6 +12,7 @@ import runSequence from 'run-sequence';
 requireDir( './gulp-tasks' );
 
 gulp.task( 'watch', function() {
+	gulp.watch( 'assets/css/scss/**/*.scss', ['compress'] );
 	gulp.watch( 'assets/css/scss/**/*.scss', ['sass', 'postcss', 'cssnano'] );
 	gulp.watch( 'assets/svg/src/**/*.svg', ['svgmin'] );
 } );
@@ -28,6 +29,6 @@ gulp.task( 'default', function() {
 		'sass',
 		'postcss',
 		'cssnano',
-		'svgmin'
+		'compress'
 	);
 } );

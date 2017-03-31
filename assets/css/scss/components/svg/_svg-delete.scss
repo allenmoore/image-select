@@ -3,8 +3,9 @@
 	height: 14px;
 	
 	.cmmis-button & {
+		margin-bottom: 3px;
+		margin-left: 1px;
 		pointer-events: none;
-		vertical-align: top;
 	}
 }
 
